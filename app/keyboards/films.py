@@ -13,7 +13,7 @@ def build_films_keyboard(films: list):
 def build_film_details_keyboard(url):
    builder = InlineKeyboardBuilder()
    builder.button(text="Перейти за посиланням", url=url)
-   builder.button(text="Go back", callback_data="back")
+   builder.button(text="Повернутися до списку фільмів", callback_data="back")
    return builder.as_markup()
 
 
